@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="io.volkov.edgeless.cases.collapsing.CollapseAppBarFragment"
+        android:label="@string/title_collapsing"
+        tools:layout="@layout/fragment_collapsing" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="io.volkov.edgeless.cases.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="io.volkov.edgeless.cases.keyboard.KeyboardFragment"
+        android:label="@string/title_keyboard"
+        tools:layout="@layout/fragment_keyboard" />
+</navigation>

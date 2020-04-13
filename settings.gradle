@@ -1,0 +1,3 @@
+rootProject.name='EdgeLess'
+include ':app'
+include ':app:edgeless'
